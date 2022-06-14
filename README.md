@@ -1,4 +1,4 @@
-# DEC_poster_template
+# A poster template for the DEC (ENS-PSL)
 A poster template for the Department of Cognitive Studies of the Ecole Normale Supérieure-PSL.
 
 This poster is forked from the Gemini template and the Univeristy of Chicago, informatic department template. 
