@@ -124,6 +124,8 @@
 \newcommand{\fontsizetitle}{\fontsize{80.00}{120.00} \selectfont}
 \newcommand{\fontsizeauthor}{\fontsize{48.00}{68.00} \selectfont}
 \newcommand{\fontsizesection}{\fontsize{48.00}{68.00} \selectfont}
+\newcommand{\fontsizesubsection}{\fontsize{36.00}{59.9} \selectfont}
+
 
 \DeclareOption{a2paper}{
 \geometry{a2paper}
@@ -132,6 +134,7 @@
 \renewcommand{\fontsizetitle}{\fontsize{40.00}{50.00} \selectfont}
 \renewcommand{\fontsizeauthor}{\fontsize{24.00}{34.00} \selectfont}
 \renewcommand{\fontsizesection}{\fontsize{24.00}{34.00} \selectfont}
+\newcommand{\fontsizesubsection}{\fontsize{20.00}{30.00} \selectfont}
 }
 
 \DeclareOption{a1paper}{
@@ -141,7 +144,9 @@
 \renewcommand{\fontsizetitle}{\fontsize{56.57}{70.71} \selectfont}
 \renewcommand{\fontsizeauthor}{\fontsize{33.94}{48.08} \selectfont}
 \renewcommand{\fontsizesection}{\fontsize{33.94}{48.08} \selectfont}
+\newcommand{\fontsizesubsection}{\fontsize{25.00}{40.00} \selectfont}
 }
+
 
 \DeclareOption{a0paper}{
 \geometry{a0paper}
@@ -245,10 +250,18 @@
 %% Section command
 \renewcommand{\section}[1]{
 
-\vspace{2em}{\fontsizesection\selectfont
+\vspace{1em}{\fontsizesection\selectfont
 \textbf{\leavevmode
 #1
 }}\\[0.5em]
+}
+
+\renewcommand{\subsection}[1]{
+
+\vspace{0.5em}{\fontsizesubsection\selectfont
+\textbf{\leavevmode
+#1
+}}\\[0.2em]
 }
 
 %% Title command
